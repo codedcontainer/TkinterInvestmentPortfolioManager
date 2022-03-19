@@ -11,7 +11,7 @@ A simple financial portfolio GUI for managing a Robinhood and Fidelity account u
 ## PIP3 Module Installation Requirments
 - [async_tkinter_loop](https://pypi.org/project/async-tkinter-loop/)
 - [yahoo_finance_async](https://pypi.org/project/yahoo_finance_async/)
-    - App will break if module looses support from Yahoo Finance
+    - App will break if module loses support from Yahoo Finance
 - [pandas](https://pypi.org/project/pandas/)
 
 ## Other resources
