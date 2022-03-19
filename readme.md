@@ -16,7 +16,7 @@ A simple financial portfolio GUI for managing a Robinhood and Fidelity account u
 
 ## Other resources
 ### PyInstaller
-If using multiple operating systems skip this section
+If using multiple operating systems, skip this section
 1. Convert app title icon to a base64 byte array or else app will not be able to run properly
 2. `pyinstaller -w --add-data "Database\investment_accounts.db;.\Database" --onefile index.py`
 
