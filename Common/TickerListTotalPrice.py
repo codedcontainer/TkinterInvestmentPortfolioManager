@@ -34,7 +34,7 @@ class TickerListTotalPrice():
         return df
 
     @staticmethod
-    def rollingSums(closing_prices_dict):
+    def accumulatedSum(closing_prices_dict):
         accumulated_sum = list(accumulate(closing_prices_dict['closing_price']))
         accumulated_sum = {'sum_price': [round(price, 2) for price in accumulated_sum]}
         accumulated_sum_df = pd.DataFrame(accumulated_sum)

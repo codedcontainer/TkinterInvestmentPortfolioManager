@@ -1,6 +1,5 @@
-from tkinter import ttk
+from tkinter import ttk, tk
 from tkinter import *
-import tkinter as tk
 from ButtonCommands.prospectiveBuyUpdate import prospectiveBuyUpdate
 from SetDefaultData.Common import Common
 from async_tkinter_loop import async_command

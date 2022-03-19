@@ -2,10 +2,6 @@ import sqlite3
 import datetime
 import Menu.MenuCommands as MenuCommands
 from Database.CommonSqliteActions import CommonSqliteActions
-import sqlite3
-
-import Menu.MenuCommands as MenuCommands
-from Database.CommonSqliteActions import CommonSqliteActions
 
 
 def robinhoodBalanceUpdate(text_inputs,tkroot):

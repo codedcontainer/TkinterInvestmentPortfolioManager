@@ -67,8 +67,8 @@ class MenuCommands:
 
         if robinhood_ticker_buy_list != '':
             closing_prices_dict = await TickerListTotalPrice.closingPricesAsync(robinhood_ticker_buy_list)
-            rolling_sums = TickerListTotalPrice().rollingSums(closing_prices_dict)
-            ticker_filter_ab = TickerListTotalPrice().filterByAccountBalance(rolling_sums, purchasing_power)
+            accumulated_sum = TickerListTotalPrice().accumulatedSum(closing_prices_dict)
+            ticker_filter_ab = TickerListTotalPrice().filterByAccountBalance(accumulated_sum, purchasing_power)
             ticker_filter_ab = Helper.sortAscending(ticker_filter_ab)
             if len(ticker_filter_ab) == 0:
                 try:
@@ -98,8 +98,8 @@ class MenuCommands:
 
         if fidelity_ticker_buy_list != '':
             closing_prices_dict = await TickerListTotalPrice.closingPricesAsync(fidelity_ticker_buy_list)
-            rolling_sums = TickerListTotalPrice().rollingSums(closing_prices_dict)
-            ticker_filter_ab = TickerListTotalPrice().filterByAccountBalance(rolling_sums, purchasing_power)
+            accumulated_sum = TickerListTotalPrice().accumulatedSum(closing_prices_dict)
+            ticker_filter_ab = TickerListTotalPrice().filterByAccountBalance(accumulated_sum, purchasing_power)
             ticker_filter_ab = Helper.sortAscending(ticker_filter_ab)
             if len(ticker_filter_ab) == 0:
                 try:
