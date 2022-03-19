@@ -2,21 +2,23 @@
 # Python Tkinter Investment Account Portfolio Management Desktop Application 
 
 ## About
-A simple financial portfolio GUI for managing a Robinhood and Fidelity account using Python's Tkinter module. Uses Sq3lite and asynchronous programming to display and set account performances, watch lists, and balances. Will run on either Windows, Linux, or Mac OS with Python and associated modules installed via PIP.
+A simple financial portfolio GUI for managing a Robinhood and Fidelity account using Python's [Tkinter module](https://docs.python.org/3/library/tkinter.html). Uses [Sqlite3](https://sqlite.org/index.html) and asynchronous programming to display and set account performances, watch lists, and balances. Will run on either Windows, Linux, or Mac OS with Python and associated modules installed via PIP.
 
 ## To Run
-- install Python3 and PIP packages listed below 
+- install [Python3](https://www.python.org/downloads/) and PIP3 modules listed below 
 - open terminal or command prompt and enter `python3 index.py`
 
-## PIP3 Installations Required
-- async_tkinter_loop
-- yahoo_finance_async
-- pandas
+## PIP3 Module Installation Requirments
+- [async_tkinter_loop](https://pypi.org/project/async-tkinter-loop/)
+- [yahoo_finance_async](https://pypi.org/project/yahoo_finance_async/)
+    - App will break if is module looses support from Yahoo Finance
+- [pandas](https://pypi.org/project/pandas/)
 
 ## Other resources
-
 ### PyInstaller
-`pyinstaller -w --add-data "Database\investment_accounts.db;.\Database" --onefile index.py`
+- If multiple OS's will be using the app, makes sense to skip this section
+1. Convert app title icon to a base64 byte array or else app will not be able to run properly
+2. `pyinstaller -w --add-data "Database\investment_accounts.db;.\Database" --onefile index.py`
 
 ## Placing a URL image from a request in a frame
 ```req = urllib.request.Request("https://stockcharts.com/c-sc/sc?s=AAPL&p=W&b=5&g=0&i=t2656791252c&r=1645919909673",headers={'User-Agent': 'Mozilla/5.0'} )
