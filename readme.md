@@ -2,7 +2,7 @@
 # Python Tkinter Investment Account Portfolio Management Desktop Application 
 
 ## About
-A simple financial portfolio GUI for managing a Robinhood and Fidelity account using Python's [Tkinter module](https://docs.python.org/3/library/tkinter.html). Uses [Sqlite3](https://sqlite.org/index.html) and asynchronous programming to display and set account performances, watch lists, and balances. Will run on either Windows, Linux, or Mac OS with Python and associated modules installed via PIP3
+A simple financial portfolio GUI for managing a Robinhood and Fidelity account using Python 3 [Tkinter module](https://docs.python.org/3/library/tkinter.html). Uses [Sqlite3](https://sqlite.org/index.html) and asynchronous programming to display and set account performances, watch lists, and balances. Will run on either Windows, Linux, or Mac OS with Python and associated modules installed via PIP3
 
 ## To Run
 - install [Python3](https://www.python.org/downloads/) and PIP3 modules listed below 
@@ -11,7 +11,7 @@ A simple financial portfolio GUI for managing a Robinhood and Fidelity account u
 ## PIP3 Module Installation Requirments
 - [async_tkinter_loop](https://pypi.org/project/async-tkinter-loop/)
 - [yahoo_finance_async](https://pypi.org/project/yahoo_finance_async/)
-    - App will break if is module looses support from Yahoo Finance
+    - App will break if module looses support from Yahoo Finance
 - [pandas](https://pypi.org/project/pandas/)
 
 ## Other resources
