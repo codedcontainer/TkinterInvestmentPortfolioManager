@@ -6,11 +6,12 @@ A simple financial portfolio GUI for managing a Robinhood and Fidelity account u
 
 ## To Run
 - install Python3 and PIP packages listed below 
-- open terminal or command prompt and enter `python index.py` or `python3 index.py`
+- open terminal or command prompt and enter `python3 index.py`
 
-## PIP Installations
+## PIP3 Installations Required
 - async_tkinter_loop
 - yahoo_finance_async
+- pandas
 
 ## Other resources
 
